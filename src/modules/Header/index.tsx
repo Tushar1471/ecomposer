@@ -1,7 +1,7 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import SelectInput from '../../components/SelectInput';
-import { CLOUDNINARY_URL, OPTIONS } from '../../utils/constants';
+import { IMG_URL, OPTIONS } from '../../utils/constants';
 
 const Header: React.FC = () => {
 
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
     return (
         <>
             <header className='lg:p-4 lg:flex lg:items-center hidden shadow border-b sticky top-0 z-40 bg-[#ffffff]'>
-                <img className='lg:w-48' src={CLOUDNINARY_URL + "logo-text.png"} alt="" />
+                <img className='lg:w-48' src={IMG_URL + "logo-text.png"} alt="" />
                 <div className='mx-auto w-full flex justify-center items-center gap-x-3'>
                     <label className='font-semibold'>{pageTitle}</label>
                     <SelectInput options={OPTIONS} handleChange={handleChange} />

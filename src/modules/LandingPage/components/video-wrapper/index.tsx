@@ -8,12 +8,12 @@ import PersonalStats from '../../../../components/personal-stats';
 const VideoWrapper: React.FC = () => {
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.1,
+        threshold: 0.5,
     })
 
     return (
         <>
-            <section className='lg:py-20'>
+            <section className='lg:py-20 lg:block hidden'>
                 <div className='lg:w-8/12 mx-auto relative'>
                     <img className='w-full h-full rounded-3xl' src={CLOUDINARY_URL + "KDZR1Qmnslbg-bn-video.png?v=1723608937"} alt="Video Wrapper" />
                     <motion.div

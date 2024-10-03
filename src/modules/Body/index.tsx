@@ -3,11 +3,7 @@ import Header from '../Header';
 import Footer from '../Footer';
 import { Outlet } from 'react-router-dom';
 
-interface Props {
-
-}
-
-const Body: React.FC<Props> = () => {
+const Body: React.FC = () => {
     return (
         <>
             <Header />

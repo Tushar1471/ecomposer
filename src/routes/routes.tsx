@@ -1,22 +1,36 @@
+import React, { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import LandingPage from "../modules/LandingPage";
-import ContactUs from "../modules/ContactUs";
-import Body from "../modules/Body";
+
+const LandingPage = lazy(() => import("../modules/LandingPage"));
+const ContactUs = lazy(() => import("../modules/ContactUs"));
+const Body = lazy(() => import("../modules/Body"));
 
 export const routes = createBrowserRouter([
     {
-        path:"/",
-        element:<Body/>,
-        children:[
+        path: "/",
+        element: (
+            <Suspense fallback={<div>Loading.....</div>}>
+                <Body />
+            </Suspense>),
+        children: [
             {
-                index:true,
-                element:<LandingPage/>,
+                index: true,
+                element: (
+                    <Suspense fallback={<div>Loading LandingPage...</div>}>
+                        <LandingPage />
+                    </Suspense>
+                ),
             },
             {
-                path:"/contact",
-                element:<ContactUs/>,
+                path: "/contact",
+                element: (
+                    <Suspense fallback={<div>Loading ContactPage...</div>}>
+                        <ContactUs />
+                    </Suspense>
+                ),
             }
         ]
     }
 ]);
+
 

@@ -22,3 +22,31 @@ export interface PersonalStats {
     label: string;
     labelSrc: string;
 }
+
+export interface TableData {
+    feature: string;
+    ourMaker: boolean;
+    otherMaker1: boolean | null;
+    otherMaker2: boolean | null;
+}
+
+export interface Testimonials {
+    text: string;
+    name: string;
+    imageSrc: string;
+    rating: number;
+}
+
+export interface OrderServices {
+    id: number;
+    iconSrc: string;
+    serviceLabel: string;
+    serviceDescription: string;
+    buttonLabel: string;
+}
+
+export interface DeskStats{
+    iconSrc:string;
+    deskLabel:string;
+    deskDescription:string
+}

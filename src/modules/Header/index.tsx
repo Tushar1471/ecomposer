@@ -1,13 +1,11 @@
 import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import SelectInput from '../../components/SelectInput';
 import { IMG_URL, OPTIONS } from '../../utils/constants';
 
 const Header: React.FC = () => {
 
     const location = useLocation();
-    const navigate = useNavigate();
-
     let pageTitle: string;
 
     switch (location.pathname) {
@@ -22,21 +20,17 @@ const Header: React.FC = () => {
 
     }
 
-    function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
-        e.target.value === "landing" ? navigate("/") : e.target.value === "contact" ? navigate("/contact") : navigate("/")
-    }
     return (
         <>
-            <header className='lg:p-4 lg:flex lg:items-center hidden shadow border-b sticky top-0 z-40 bg-[#ffffff]'>
-                <img className='lg:w-48' src={IMG_URL + "logo-text.png"} alt="" />
-                <div className='mx-auto w-full flex justify-center items-center gap-x-3'>
-                    <label className='font-semibold'>{pageTitle}</label>
-                    <SelectInput options={OPTIONS} handleChange={handleChange} />
-                    <input className='w-3/12 lg:py-1 rounded-md indent-4 outline-none border border-slate-300' type="text" name="search" id="search" placeholder='🔍 Type Something to find template' />
+            <header className='p-4 flex lg:flex-row flex-col items-center shadow border-b lg:gap-y-0 gap-y-3 sticky top-0 left-0 right-0 z-40 bg-[#ffffff]'>
+                <img className='lg:w-48 w-40 mx-auto' src={IMG_URL + "logo-text.png"} alt="" />
+                <div className='mx-auto w-full flex lg:flex-row flex-col justify-center items-center lg:gap-x-3 gap-y-5'>
+                    <div className='flex items-center gap-x-2'>
+                        <label className='font-bold'>{pageTitle}</label>
+                        <SelectInput options={OPTIONS} />
+                    </div>
+                    <input className='lg:w-3/12 py-1 w-11/12 rounded-md indent-4 outline-none border border-slate-300' type="text" name="search" id="search" placeholder='🔍 Type Something to find template' />
                 </div>
-                {/* <div>
-                    <p>Hello</p>
-                </div> */}
             </header>
         </>
     );

@@ -5,14 +5,11 @@ import { CLOUDINARY_URL, COMPONENTS_STATS } from '../../../../utils/constants';
 import MachineStats01 from '../../../../components/machine-stats01';
 import MachineStats02 from '../../../../components/machine-stats02';
 
-interface Props {
-}
-
-const MachineComponents: React.FC<Props> = () => {
+const MachineComponents: React.FC = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: 0.5,
   })
 
   const sidebarList1 = COMPONENTS_STATS && COMPONENTS_STATS.slice(0, 3);
@@ -20,7 +17,7 @@ const MachineComponents: React.FC<Props> = () => {
 
   return (
     <>
-      <section className='lg:pt-24'>
+      <section className='lg:pt-24 lg:block hidden'>
         <motion.h1 ref={ref}
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

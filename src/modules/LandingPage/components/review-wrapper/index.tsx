@@ -31,9 +31,9 @@ const ReviewWrapper: React.FC = () => {
     const { text, name, imageSrc, rating } = testimonials[currentIndex];
     return (
         <>
-            <section className='lg:block hidden'>
-                <div className='lg:w-8/12 lg:h-[70vh] rounded-3xl mx-auto bg-green-400 backdrop relative overflow-hidden'>
-                    <div className='lg:w-5/12 h-[70%] shadow-lg bg-white absolute right-20 top-[15%] rounded-3xl lg:p-16 text-center overflow-hidden'>
+            <section>
+                <div className='lg:w-8/12 w-11/12 h-[70vh] rounded-3xl mx-auto bg-green-400 backdrop relative overflow-hidden lg:mt-0 mt-12'>
+                    <div className='lg:w-5/12 w-11/12  lg:h-[50%] h-[60%] shadow-lg bg-white absolute right-10 top-[20%] rounded-3xl lg:p-16 p-4 text-center overflow-hidden'>
                         <motion.h3
                             ref={ref}
                             initial={{ opacity: 0, y: 100 }}

@@ -74,7 +74,7 @@ export const COMPONENTS_STATS: ComponentStats[] = [
     {
         id: 4,
         title: "Espresso Capsule Brewer",
-        description: "Compatible with Nespresso OriginalLine capsules.",
+        description: "Compatible with Nespresso Original Line capsules.",
         imgSrc: "uQtdb3bLKUft-cff-4.png?v=1723605352"
     },
     {

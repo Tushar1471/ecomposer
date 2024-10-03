@@ -13,16 +13,16 @@ const FeatureComparison: React.FC = () => {
 
     return (
         <>
-            <section className='lg:py-32 lg:block hidden'>
+            <section className='lg:py-32 py-16 hidden lg:block'>
                 <motion.h1
                     ref={ref}
                     initial={{ opacity: 0, y: 100 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1 }}
-                    className='font text-center lg:text-6xl'>How we stand Out
+                    className='font text-center lg:text-6xl text-3xl'>How we stand Out
                 </motion.h1>
-                <div className='lg:w-8/12 mx-auto lg:mt-10'>
-                    <table className="w-full border-collapse">
+                <div className='lg:w-8/12 mx-auto mt-10'>
+                    <table className="w-full border-collapse overflow-x-scroll">
                         <thead>
                             <tr>
                                 <th className="p-4"> </th>

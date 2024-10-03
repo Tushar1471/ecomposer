@@ -28,7 +28,7 @@ const Carousel: React.FC<CarouselProps> = ({ slides }) => {
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className="w-full flex-shrink-0 lg:h-[65vh] bg-cover bg-center text-white flex items-center justify-center rounded-xl"
+                        className="w-full flex-shrink-0 lg:h-[65vh] h-[50vh] bg-cover bg-center text-white flex items-center justify-center rounded-xl"
                         style={{ backgroundImage: `url(${slide})` }}
                     >
                     </div>

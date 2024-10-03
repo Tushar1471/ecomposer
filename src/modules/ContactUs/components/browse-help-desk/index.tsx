@@ -8,12 +8,12 @@ const BrowseHelpDesk: React.FC = () => {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.5,
+        threshold: 0.1,
     })
     return (
         <>
-            <section className='lg:w-10/12 mx-auto flex flex-col gap-y-10 lg:py-20'>
-                <h2 className='text-center lg:text-5xl font-semibold lg:mb-4'>Browse our Help Desk</h2>
+            <section className='lg:w-10/12 w-11/12 mx-auto flex flex-col gap-y-10 lg:py-20'>
+                <h2 className='text-center lg:text-5xl text-3xl lg:font-semibold font-bold lg:mb-4'>Browse our Help Desk</h2>
                 <motion.div
                     ref={ref}
                     initial={{ opacity: 0, y: 100 }}

@@ -21,10 +21,9 @@ const WarrantyStats: React.FC<Props> = ({ title, iconSrc }) => {
                 initial={{ opacity: 0, y: 100 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, ease: 'easeOut' }}
-                className='lg:w-4/12 flex items-center gap-x-3'>
-                <img className='lg:w-1' src={CLOUDINARY_URL + iconSrc} alt="" />
-                <p
-                    className='lg:text-xl font-semibold'>{title}</p>
+                className='lg:w-4/12 w-full flex lg:flex-row flex-col gap-y-3 items-center justify-center gap-x-3'>
+                <img className='w-1' src={CLOUDINARY_URL + iconSrc} alt="" />
+                <p className='lg:text-xl lg:font-semibold font-bold'>{title}</p>
             </motion.div>
         </>
     );

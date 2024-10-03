@@ -11,7 +11,7 @@ const AccordionBar: React.FC<AccordionProps> = ({ items }) => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.5
+        threshold: 0.1
     })
 
     const toggleAccordion = (index: number) => {
@@ -24,7 +24,7 @@ const AccordionBar: React.FC<AccordionProps> = ({ items }) => {
             initial={{ opacity: 0, y: 100 }}
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 1 }}
-            className="lg:w-9/12 mx-auto shadow-lg rounded-3xl bg-white">
+            className="lg:w-9/12 w-11/12 mx-auto shadow-lg rounded-3xl bg-white">
             {items.map((item, index) => (
                 <AccordionItem
                     key={index}

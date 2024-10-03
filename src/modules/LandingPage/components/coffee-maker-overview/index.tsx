@@ -35,7 +35,7 @@ const CoffeeMakerOverview: React.FC = () => {
                     ))}
                 </motion.div>
                 </div>
-                <div className='lg:w-7/12 bg-[#FFF1A8] mx-auto lg:mt-24 rounded-full flex gap-x-4 lg:py-4 lg:px-10'>
+                <div className='lg:w-7/12 w-11/12 bg-[#FFF1A8] mx-auto lg:mt-24 lg:rounded-full rounded-2xl flex lg:flex-row flex-col gap-x-4 py-4 lg:px-10 gap-y-3'>
                     {WARRANTY_STATS.map((stat, index) => (<WarrantyStats key={index} title={stat?.title} iconSrc={stat?.iconSrc} />))}
                 </div>
             </section>

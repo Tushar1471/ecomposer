@@ -11,12 +11,12 @@ interface ComponentProps {
 const MachineStats01: React.FC<ComponentProps> = ({ title, description, imgSrc }) => {
     return (
         <>
-            <div className='flex justify-between items-center'>
-                <div className='lg:p-4 text-end'>
-                    <h3 className='font-semibold lg:text-lg'>{title}</h3>
-                    <p className='text-lg text-[#6B6B6B]'>{description}</p>
+            <div className='flex lg:flex-row flex-col-reverse justify-center items-center'>
+                <div className='p-4'>
+                    <h3 className='lg:font-semibold lg:text-end font-bold text-center  lg:text-lg'>{title}</h3>
+                    <p className='text-lg text-[#6B6B6B] lg:text-end'>{description}</p>
                 </div>
-                <img className='lg:w-2 border border-black rounded-full' src={CLOUDINARY_URL + imgSrc} alt={title} />
+                <img className='lg:w-2 w-3 border border-black rounded-full' src={CLOUDINARY_URL + imgSrc} alt={title} />
             </div>
         </>
     );

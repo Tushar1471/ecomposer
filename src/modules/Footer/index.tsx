@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                                 <p className='lg:text-5xl text-xl'>
                                     <PiEnvelopeThin />
                                 </p>
-                                <input className="outline-none" type="email" name="email" id="email" placeholder='Email address' />
+                                <input className="outline-none" type="email" name="email" id="email" placeholder='Email address' autoComplete='email' />
                                 <button className='bg-black text-white lg:px-4 lg:py-2 px-2 py-1 rounded'>Sign Up</button>
                             </div>
                         </div>

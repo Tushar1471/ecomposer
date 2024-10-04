@@ -11,7 +11,7 @@ const ReviewWrapper: React.FC = () => {
 
     const { ref, inView } = useInView({
         triggerOnce: true,
-        threshold: 0.5
+        threshold: 0.1
     })
 
     const [currentIndex, setCurrentIndex] = useState<number>(0);

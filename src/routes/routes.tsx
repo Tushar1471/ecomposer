@@ -1,5 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
+import LoaderBar from "../components/loadingBar";
 
 const LandingPage = lazy(() => import("../modules/LandingPage"));
 const ContactUs = lazy(() => import("../modules/ContactUs"));
@@ -9,14 +10,14 @@ export const routes = createBrowserRouter([
     {
         path: "/",
         element: (
-            <Suspense fallback={<div>Loading.....</div>}>
+            <Suspense fallback={<LoaderBar />}>
                 <Body />
             </Suspense>),
         children: [
             {
                 index: true,
                 element: (
-                    <Suspense fallback={<div>Loading LandingPage...</div>}>
+                    <Suspense fallback={<LoaderBar />}>
                         <LandingPage />
                     </Suspense>
                 ),
@@ -24,7 +25,7 @@ export const routes = createBrowserRouter([
             {
                 path: "/contact",
                 element: (
-                    <Suspense fallback={<div>Loading ContactPage...</div>}>
+                    <Suspense fallback={<LoaderBar />}>
                         <ContactUs />
                     </Suspense>
                 ),

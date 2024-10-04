@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 .heroImage {
+    height:100vh;
     background-image: url("https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-ntF5oAW6gKbg-hr-cf-2.png?v=1723535496");
     background-position: center;
     background-size: cover;

@@ -8,8 +8,8 @@ const HeroSection: React.FC = () => {
     return (
         <>
             <section className=' text-white'>
-                <div className='heroImage min-h-screen'>
-                    <div className='lg:w-9/12 h-full absolute top-[0%] lg:left-[15%] flex lg:flex-row flex-col-reverse p-4'>
+                <div className='heroImage'>
+                    <div className='lg:w-9/12 h-full absolute top-[0%] lg:left-[15%] flex lg:flex-row flex-col p-4'>
                         <motion.div initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: 'easeIn' }} className='lg:w-6/12 h-full flex flex-col justify-center items-start gap-y-8'>

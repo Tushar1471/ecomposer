@@ -20,7 +20,7 @@ const CoffeeMakerOverview: React.FC = () => {
                     initial={{ opacity: 0, y: 100 }}
                     animate={inView ? { opacity: 1, y: 0 } : {}}
                     transition={{ duration: 1, ease: 'easeOut' }}
-                    className='font text-center lg:text-6xl text-3xl pb-10'>What Makes Our Coffee Makers<br />
+                    className='font text-center lg:text-6xl text-3xl px-1 py-4 pb-10'>What Makes Our Coffee Makers<br />
                     the Best Choice?
                 </motion.h1>
                 <div className='w-full'>

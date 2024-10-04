@@ -2,17 +2,17 @@
     "short_name": "ReactApp",
     "name": "My React Progressive Web App",
     "icons": [{
-            "src": "favicon.ico",
+            "src": "https://cdn.shopify.com/app-store/listing_images/253c9864fe7cc4ba163511830f085a0f/icon/CIOUnvvPu_gCEAE=.png",
             "sizes": "64x64 32x32 24x24 16x16",
             "type": "image/x-icon"
         },
         {
-            "src": "logo192.png",
+            "src": "https://cdn.shopify.com/app-store/listing_images/253c9864fe7cc4ba163511830f085a0f/icon/CIOUnvvPu_gCEAE=.png",
             "type": "image/png",
             "sizes": "192x192"
         },
         {
-            "src": "logo512.png",
+            "src": "https://cdn.shopify.com/app-store/listing_images/253c9864fe7cc4ba163511830f085a0f/icon/CIOUnvvPu_gCEAE=.png",
             "type": "image/png",
             "sizes": "512x512"
         }

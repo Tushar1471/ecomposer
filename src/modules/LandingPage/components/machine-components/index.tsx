@@ -27,7 +27,7 @@ const MachineComponents: React.FC = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 1, ease: 'easeOut' }}
-          className='font text-center lg:text-6xl text-3xl'>Perfect Extraction for a Perfect Cup
+          className='font text-center px-1 lg:text-6xl text-3xl'>Perfect Extraction for a Perfect Cup
         </motion.h1>
         <div className='lg:w-8/12 w-11/12 mx-auto lg:mt-20 mt-10 flex lg:flex-row flex-col-reverse justify-center items-center lg:gap-x-2 gap-y-10'>
           <motion.div

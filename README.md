@@ -5,20 +5,21 @@ Welcome to the **Coffee Maker Machine** project! This project showcases the diff
 
 ## Table of Contents
 
-1. [Features](#features)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
-6. [Contact](#contact)
+1. [Project_Overview](#Project_Overview)
+2. [Page_Features](#Page_Features)
+3. [LandingPage_Overview](#LandingPage_Overview)
+4. [Other_Features](#features)
+5. [Installation](#installation)
+3. [Pages](#pages)
 
-## Project Overview
+
+## Project_Overview
 
 The **Coffee Maker Machine** project is a user-centric platform that includes a **Landing Page** for showcasing the coffee machine’s unique features and a **Contact Us** page for user inquiries and feedback. The project is designed to provide potential users and buyers an intuitive, informative experience about the coffee machine and its components, along with an easy way to connect with the brand for further queries.
 
 ---
 
-## Features
+## Page_Features
 
 - **Landing Page**: Beautiful, informative landing page showcasing the coffee maker machine’s features and benefits.
 - **Contact Us Page**: A simple and user-friendly page for users to submit inquiries.
@@ -29,7 +30,7 @@ The **Coffee Maker Machine** project is a user-centric platform that includes a 
 
 ---
 
-## Landing Page Overview
+## LandingPage_Overview
 
 The **Landing Page** component integrates various sub-components to create a cohesive user experience. The key sections of the Landing Page include:
 
@@ -66,13 +67,13 @@ Make sure you have the following installed:
 1. **Clone the repository**:
 
     ```bash
-    git clone https://github.com/yourusername/coffee-maker-machine.git
+    git clone https://github.com/Tushar1471/ecomposer.git
     ```
 
 2. **Navigate to the project directory**:
 
     ```bash
-    cd coffee-maker-machine
+    cd ecomposer
     ```
 
 3. **Install dependencies**:

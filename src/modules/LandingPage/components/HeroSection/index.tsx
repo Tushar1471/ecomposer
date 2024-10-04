@@ -7,9 +7,9 @@ import { motion } from "framer-motion";
 const HeroSection: React.FC = () => {
     return (
         <>
-            <section className='w-full overflow-hidden text-white'>
+            <section className=' text-white'>
                 <div className='heroImage min-h-screen'>
-                    <div className='lg:w-9/12 h-full absolute top-[0%] lg:left-[15%] flex lg:flex-row flex-col p-4'>
+                    <div className='lg:w-9/12 h-full absolute top-[0%] lg:left-[15%] flex lg:flex-row flex-col-reverse p-4'>
                         <motion.div initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: 'easeIn' }} className='lg:w-6/12 h-full flex flex-col justify-center items-start gap-y-8'>
@@ -40,27 +40,27 @@ const HeroSection: React.FC = () => {
                                     <EcomBlock data={"Single-Serve Coffee"} />
                                 </motion.ul>
                             </div>
-                            <button className='flex items-center gap-x-2 bg-black rounded-full px-4 py-3'>Discover More<FaPlayCircle /></button>
+                            <button className='flex items-center gap-x-2 mb-4 bg-black rounded-full lg:px-4 lg:py-3 px-3 py-2'>Discover More<FaPlayCircle /></button>
                         </motion.div>
                         <motion.div initial={{ opacity: 0, y: 100 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 1, ease: 'easeOut' }} className='lg:w-5/12 h-full flex items-center'>
+                            transition={{ duration: 1, ease: 'easeOut' }} className='lg:w-5/12 w-11/12 flex mx-auto justify-center items-center'>
                             <div
                                 className='relative'>
-                                <img className='w-60 lg:w-full' src="https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-RUYPYkqNjZcoffee-m-layer.png?v=1723540466" alt="" />
+                                <img className='w-56 lg:w-full' src="https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-RUYPYkqNjZcoffee-m-layer.png?v=1723540466" alt="" />
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 1 }}
-                                    className='absolute -top-10 right-0'>
-                                    <img className='w-10' src="https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-mRuu436zTFlogo-br.png?v=1723540535" alt="" />
+                                    className='absolute top-0 right-0'>
+                                    <img className='lg:w-44 w-20' src="https://cdn.shopify.com/s/files/1/0726/1221/7115/files/ecom-no-replace-mRuu436zTFlogo-br.png?v=1723540535" alt="" />
                                 </motion.div>
                                 <motion.div
                                     initial={{ opacity: 0, scale: 0.5 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 1 }}
-                                    className='absolute right-0 bottom-6'>
-                                    <p className='bg-white font text-green-600 lg:text-7xl font-semibold lg:px-4 lg:pb-2 rounded-full'>4-in-1</p>
+                                    className='absolute lg:bottom-0 bottom-6 right-0'>
+                                    <p className='bg-white font text-green-600 lg:text-7xl font-semibold px-4 pb-2 rounded-full'>4-in-1</p>
                                 </motion.div>
                             </div>
                         </motion.div>

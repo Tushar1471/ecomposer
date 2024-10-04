@@ -22,7 +22,7 @@ const MachineComponents: React.FC = () => {
         initial={{ opacity: 0, y: 100 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1 }}
-        className='lg:pt-24 pt-12 overflow-hidden'>
+        className='lg:pt-24 pt-12'>
         <motion.h1 ref={ref}
           initial={{ opacity: 0, y: 100 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}

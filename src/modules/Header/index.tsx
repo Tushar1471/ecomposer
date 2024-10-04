@@ -22,7 +22,7 @@ const Header: React.FC = () => {
 
     return (
         <>
-            <header className='p-4 flex lg:flex-row flex-col items-center shadow border-b lg:gap-y-0 gap-y-3 sticky top-0 left-0 right-0 z-40 bg-[#ffffff]'>
+            <header className='w-full p-4 flex lg:flex-row flex-col items-center shadow border-b lg:gap-y-0 gap-y-3 sticky top-0 left-0 z-40 bg-[#ffffff]'>
                 <Link to={"/"}>
                     <img className='lg:w-48 w-40 mx-auto' src={IMG_URL + "logo-text.png"} alt="" />
                 </Link>

@@ -10,7 +10,8 @@ Welcome to the **Coffee Maker Machine** project! This project showcases the diff
 3. [LandingPage_Overview](#LandingPage_Overview)
 4. [Other_Features](#features)
 5. [Installation](#installation)
-3. [Pages](#pages)
+6. [Pages](#pages)
+7. [Technologies](#technologies-used)
 
 
 ## Project_Overview

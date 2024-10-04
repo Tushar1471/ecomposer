@@ -16,7 +16,7 @@ Welcome to the **Coffee Maker Machine** project! This project showcases the diff
 
 ## Project_Overview
 
-The **Coffee Maker Machine** project is a user-centric platform that includes a **Landing Page** for showcasing the coffee machine’s unique features and a **Contact Us** page for user inquiries and feedback. The project is designed to provide potential users and buyers an intuitive, informative experience about the coffee machine and its components, along with an easy way to connect with the brand for further queries.
+The **Coffee Maker Machine** project is a user-centric platform that includes a **Landing Page** for showcasing the coffee machine’s unique features and a **Contact Us** page for users inquiries and feedback. The project is designed to provide potential users and buyers an intuitive, informative experience about the coffee machine and its components, along with an easy way to connect with the brand for further queries.
 
 ---
 
